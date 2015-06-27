@@ -5,12 +5,13 @@ Just in case anybody else needs such a thing!
 Example usage, to interface with CLR components:
 
 ```
-# requirements.txt
+### requirements.txt
+
 pythonnet
 ```
 
 ```python
-# your_app.py
+### your_app.py
 
 import clr
 from System.Collections.Generic import Dictionary
@@ -22,6 +23,8 @@ dict3 = Dictionary[String, Type]()
 ```
 
 ```dockerfile
+### Dockerfile
+
 FROM benley/wine-python-dotnet
 EXPOSE 8080
 RUN python your_app.py
